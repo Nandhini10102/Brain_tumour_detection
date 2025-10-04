@@ -23,27 +23,34 @@ It combines both a Custom CNN model and Transfer Learning (ResNet50, etc.), and 
 
 📂 Project Structure
 
-Brain_Tumour_Classification/
-│── data/                   # Dataset (not uploaded to GitHub if large)
-│   ├── Tumour/
-│       ├── train/
-│       ├── valid/
+BRAIN_TUMOUR/
+│
+├── data/
+│   └── Tumour/
 │       ├── test/
-│── models/                 # Saved trained models (.keras)
-│   ├── custom_cnn.keras
-│   ├── resnet50_transfer.keras
-│── notebooks/              # Jupyter notebooks for exploration
-│   ├── Brain_Tumor.ipynb
-│── scripts/                # All Python scripts
-│   ├── 1_data_preprocessing.py
-│   ├── 2_data_augmentation.py
-│   ├── 3_custom_cnn.py
-│   ├── 4_transfer_learning.py
-│   ├── 5_train_and_evaluate.py
-│   ├── 6_model_comparison.py
-│── app.py                  # Streamlit application
-│── requirements.txt        # Dependencies
-│── README.md               # Project documentation
+│       │   ├── glioma/
+│       │   ├── meningioma/
+│       │   ├── no_tumor/
+│       │   └── pituitary/
+│       └── _classes.csv
+│
+├── train/
+├── valid/
+│
+├── models/
+│
+├── README.dataset.txt
+│
+├── 1Dataset.py
+├── 2Preprocessing.py
+├── 3DataAugmentation.py
+├── 4ModelBuilding5.py
+├── 6TrainModels.py
+├── 7EvaluateModels.py
+├── 8ModelComparision.py
+├── app.py
+├── Brain_Tumor.ipynb
+└── Tumour-20250915T... (some dataset or zip file)
 
 🧩 Tech Stack
 
